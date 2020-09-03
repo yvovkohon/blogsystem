@@ -16,8 +16,8 @@ namespace BlogSystem.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Post>().ToTable("Post");
-            modelBuilder.Entity<Comment>().ToTable("Comment");
+            modelBuilder.Entity<Post>().ToTable("Posts");
+            modelBuilder.Entity<Comment>().ToTable("Comments");
         }
     }
 }

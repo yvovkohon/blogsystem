@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BlogSystem.Api</name>
+    </assembly>
+    <members>
+        <member name="M:BlogSystem.Api.Controllers.CommentController.AddComment(BlogSystem.Models.DTO.CommentDto)">
+            <summary>
+            Add a new comment
+            </summary>
+            <param name="comment">Comment details</param>
+            <returns>Comment Id</returns>
+            <response code="200">Returns id for the newly created comment</response>
+            <response code="400">Exception has been thrown</response>
+        </member>
+        <member name="T:BlogSystem.Api.Controllers.PostsController">
+            <summary>
+            Api to work with the posts
+            </summary>
+        </member>
+        <member name="M:BlogSystem.Api.Controllers.PostsController.AddPost(BlogSystem.Models.DTO.PostDto)">
+            <summary>
+            Add a new post
+            </summary>
+            <param name="post">Post details</param>
+            <returns>Post Id</returns>
+            <response code="200">Post was successfully added</response>
+            <response code="400">Exception has been thrown</response>
+        </member>
+        <member name="M:BlogSystem.Api.Controllers.PostsController.GetPost(System.Int32)">
+            <summary>
+            Get the post by Id
+            </summary>
+            <param name="id">Post id</param>
+            <returns>Post details</returns>
+            <response code="200">Returns post details</response>
+            <response code="400">Exception has been thrown</response>
+            <response code="404">Post was not found</response>
+        </member>
+        <member name="M:BlogSystem.Api.Controllers.PostsController.GetAllPosts">
+            <summary>
+            Get all posts ordered by date
+            </summary>
+            <returns>Posts</returns>
+            <response code="200">Returns posts details</response>
+            <response code="400">Exception has been thrown</response>
+        </member>
+        <member name="M:BlogSystem.Api.Controllers.PostsController.DeletePost(System.Int32)">
+            <summary>
+            Delete the post by Id
+            </summary>
+            <param name="id">Post id</param>
+            <returns>Is post removed</returns>
+            <response code="200">Post was successfully removed</response>
+            <response code="400">Exception has been thrown</response>
+            <response code="404">Post was not found</response>
+        </member>
+    </members>
+</doc>
